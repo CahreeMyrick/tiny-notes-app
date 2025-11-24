@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Tiny Notes App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>Tiny Notes 📝</h1>
+
+    <section class="new-note">
+      <h2>Create a note</h2>
+      <form id="note-form">
+        <input
+          id="note-title"
+          type="text"
+          placeholder="Title"
+          required
+        />
+        <textarea
+          id="note-body"
+          rows="4"
+          placeholder="Write something..."
+          required
+        ></textarea>
+        <button type="submit">Add note</button>
+      </form>
+      <p id="error" class="error"></p>
+    </section>
+
+    <section class="notes-list">
+      <h2>Your notes</h2>
+      <div id="notes-container"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
